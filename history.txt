@@ -1,0 +1,43 @@
+    1  VirtualBox --startvm XP
+    2  uname -r
+    3  lsb_release
+    4  cat /etc/*-release
+    5  echo $0
+    6  pwd
+    7  whoiam
+    8  whoami
+    9  is
+   10  ls
+   11* 
+   12  cd
+   13  pwd
+   14  cat /etc/*-release
+   15  ls
+   16  echo 
+   17  echo $0
+   18  pwd
+   19  cd .
+   20  pwd
+   21  .
+   22  whoami
+   23  who
+   24  man
+   25  lsb_release
+   26  cat /etc/*-release
+   27  who
+   28  man ls
+   29  la -l
+   30  ls -l
+   31  ls -a
+   32  cd Documents/
+   33  pwd
+   34  cd ..
+   35  pwd
+   36  cd
+   37  pwd
+   38  mkdir darbi
+   39  ls -l
+   40  cd darbi/
+   41  pwd
+   42  history
+   43  history > history.txt
