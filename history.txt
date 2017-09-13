@@ -41,3 +41,98 @@
    41  pwd
    42  history
    43  history > history.txt
+   44  ls -la
+   45  cat history.txt
+   46  pwd
+   47  ls -la
+   48  git init
+   49  git add .
+   50  git config --global user.name krisypon@inbox.lv
+   51  ls -la
+   52  git commit -m "20170913_14_00"
+   53  git config --global user.email krisypon@inbox.lv
+   54  git remote add origin https://github.com/krisypon/DMI.git
+   55  git push origin master
+   56  pwd
+   57  mkdir apaksdarbi
+   58  pwd
+   59  ls -l
+   60  cd apaksdarbi
+   61  ls -la
+   62  history > vesture.txt
+   63  cd ..
+   64  pwd
+   65  rmdir apaksdarbi/
+   66  man rmdir
+   67  rm apaksdarbi/
+   68  rm -rf apaksdarbi/
+   69  ls -la
+   70  cd /
+   71  ls
+   72  mkdir apd
+   73  rm dev
+   74  rm dev1
+   75  cd 
+   76  pwd
+   77  cd darbi
+   78  pwd
+   79  echo Tecmint is a community of Linux Nerds
+   80  x=10
+   81  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds"
+   82  echo -e "Techmint \nis \na \ncommunity \nof \nLinux \nNerds"
+   83  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinux \tNerds"
+   84  echo -e "\n\tTecmint \n\tis \n\ta \n\tcommunity \n\tof \n\tLinux \n\tNerds"
+   85  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
+   86  echo -e "\n\vTecmint \n\vis \n\va \n\vcommunity \n\vof \n\vLinux \n\vNerds"
+   87  echo -e "Tecmint \ris a community of Linux Nerds"
+   88  echo -e "Tecmint is a community \cof Linux Nerds"
+   89  echo -n "Tecmint is a community of Linux Nerds"
+   90  echo -e "Tecmint is a community of \aLinux Nerds" 
+   91  echo *
+   92  echo *.jpeg
+   93  pwd
+   94  echo "Test Page" > testpage
+   95  pwd
+   96  echo *
+   97  ls
+   98  echo *.jpg
+   99  echo *.txt
+  100  echo "Teksts"
+  101  echo "Teksts" > a.txt
+  102  ls -la
+  103  pwd
+  104  ls -l
+  105  cat a.txt
+  106  cat testpage
+  107  echo "tekststeksts" > b.txt
+  108  ls -l
+  109  cat a.txt
+  110  cat b.txt
+  111  cat c.txt
+  112  cat a.txt > d.txt
+  113  ls -l
+  114  cat b.txt > d.txt
+  115  ls -l
+  116  cat a.txt > d.txt
+  117  cat b.txt >> d.txt
+  118  ls -l
+  119  cat d.txt
+  120  cp b.txt bb.txt
+  121  ls -l
+  122  cp b.txt ../c1.txt
+  123  cd ..
+  124  ls -l
+  125  pwd
+  126  cp c1.txt darbi/c2.txt
+  127  cd darbi/
+  128  ls -l
+  129  cd /
+  130  mv ~/darbi/a.txt ~/
+  131  cd
+  132  ls -l
+  133  cd darbi/
+  134  ls -l
+  135  pwd
+  136  ls -l
+  137  ls -la
+  138  history > history.txt
