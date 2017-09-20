@@ -1,0 +1,43 @@
+    1  VirtualBox --startvm XP
+    2  ls
+    3  nano git-downlosd.sh
+    4  ls -l
+    5  cat git-download.sh
+    6  cat git-downlosd.sh
+    7  echo $PATH
+    8  whereis ls
+    9  ls -l /bin/ls
+   10  cat /bin/ls
+   11  echo $PATH
+   12  ls -l
+   13  ls -l /bin/ls
+   14  pwd
+   15  git-downlosd
+   16  ls
+   17  pwd
+   18  PATH=$PATH:/home/user
+   19  echo $PATH
+   20  ls
+   21  git-downlosd.sh
+   22  ls -l git-downlosd.sh
+   23  ls -l /bin/ls
+   24  chmod 744 git-downlosd.sh
+   25  ls -l git-downlosd.sh
+   26  git-downlosd
+   27  git-downlosd.sh
+   28  ls -l
+   29  mv git-downlosd.sh git-download
+   30  ls -l
+   31  git-download
+   32  cd DMI
+   33  ls -l
+   34  ls -la
+   35  mv ../git-download ./
+   36  ls -l
+   37  PATH=$PATH:~/DMI
+   38  git-download 
+   39  ls -l
+   40  rm -rf DMI/
+   41  ls -l
+   42  nano git-upload
+   43  history > history_20170920.txt
