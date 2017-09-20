@@ -1,43 +1,56 @@
     1  VirtualBox --startvm XP
     2  ls
+Rakstam skriptu
     3  nano git-downlosd.sh
     4  ls -l
     5  cat git-download.sh
     6  cat git-downlosd.sh
     7  echo $PATH
+Find info about ls
     8  whereis ls
     9  ls -l /bin/ls
    10  cat /bin/ls
    11  echo $PATH
    12  ls -l
    13  ls -l /bin/ls
+Kur es esmu
    14  pwd
    15  git-downlosd
    16  ls
    17  pwd
+Kur sistemai meklet komandu (kada mape)
    18  PATH=$PATH:/home/user
+Kur sistema skatas
    19  echo $PATH
    20  ls
    21  git-downlosd.sh
    22  ls -l git-downlosd.sh
    23  ls -l /bin/ls
+Iedot tiesibas (rwx)
    24  chmod 744 git-downlosd.sh
    25  ls -l git-downlosd.sh
    26  git-downlosd
    27  git-downlosd.sh
    28  ls -l
+Move from _ to _ (sada gadijuma parsaukt failu/parvietosana uz vietas)
    29  mv git-downlosd.sh git-download
    30  ls -l
    31  git-download
+Parvietosana starp mapem 
    32  cd DMI
    33  ls -l
    34  ls -la
+Move from _ to _
    35  mv ../git-download ./
    36  ls -l
+Kur sistemai meklet komandu
    37  PATH=$PATH:~/DMI
    38  git-download 
    39  ls -l
+Izdzest mapi ar visiem ieksa esosajiem failiem
    40  rm -rf DMI/
    41  ls -l
+Parrakstit skriptu (mainit skripta saturu/apskatit to)
    42  nano git-upload
+Ierakstit vesturi ar sodienas datumu
    43  history > history_20170920.txt
