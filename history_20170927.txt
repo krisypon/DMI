@@ -1,0 +1,42 @@
+    1  VirtualBox --startvm XP
+    2  git clone https://github.com/krisypon/DMI.git
+    3  ls -l
+    4  cd DMI
+    5  ls -la
+    6  _ALI
+    7  NAME="Kristina"
+    8  echo $NAME
+    9  a=100
+   10  echo $a
+   11  NAME="kRISY"
+   12  NAME="KRISY"
+   13  readonly NAME
+   14  echo $NAME
+   15  NAME="HELLO"
+   16  NAME="KRISY"
+   17  unset NAME
+   18  echo $name
+   19  nano shell_examples.sh
+   20  ls -la
+   21  cat shell_examples.sh
+   22  PATH=$PATH:~/DMI/
+   23  echo $PATH
+   24  shell_examples.sh
+   25  chmod 744 shell_examples.sh
+   26  ls -la
+   27  shell_examples.sh 
+   28  ls -la
+   29  cat shell_examples.sh
+   30  nano shell_examples.sh 
+   31  ls -la
+   32  cat shell_examples.sh 
+   33  shell_examples.sh 
+   34  nano shell_examples.sh 
+   35  shell_examples.sh 
+   36  nano shell_examples.sh 
+   37  shell_examples.sh 
+   38  nano shell_examples.sh 
+   39  shell_examples.sh 
+   40  pwd
+   41  ls -la
+   42  history > history_20170927.txt
