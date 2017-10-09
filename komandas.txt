@@ -1,6 +1,6 @@
 ---Parada faila saturu
-cat faila nosaukums (cat )
----?
+cat faila nosaukums (cat komandas.txt)
+---Informacija par operativo sistemu, versija u.c.
 cat /etc/*-release
 ---Pieskirt tiesibas failam vai mapei(mainit atlauju)
 chmod 744 nosaukums (chmod 744 git-download.sh)
@@ -14,12 +14,12 @@ echo
 echo $0
 ---Kur sistema mekle komandas
 echo $PATH
-?---?
+---Komandas failu ieladesanai no/uz github.com un darbam ar git
 git add
 git config --global user.name lietotajvards@mail.com
 git commit -m "datums"
 git clone https://github.com/username/mape.git
-git remote add origin saite uz repozitarija
+git remote add origin https://github.com/saite_uz_repozitariju.git
 git push origin master
 git init
 ---Paradit saja terminala izmantotas komandas
@@ -30,7 +30,7 @@ la -l
 ls
 ls -l
 ls -a
-?---?
+---?
 lsb_release
 ---Parada informaciju par komandam
 man komanda  (man ls)
@@ -48,7 +48,7 @@ pwd
 rm faila nosaukums (rm bb.txt)
 rmdir mapes nosaukums (rmdir apaksdarbi/) 
 rm -rf atrasanas vieta/mape (rm -rf DMI/)
-?---Parada Linux versiju
+---Parada Linux versiju
 uname
 ---Parada kur glabajas informacija par komandu
 whereis komanda (whereis ls)
