@@ -1,0 +1,58 @@
+---Parada faila saturu
+cat faila nosaukums (cat )
+---?
+cat /etc/*-release
+---Pieskirt tiesibas failam vai mapei(mainit atlauju)
+chmod 744 nosaukums (chmod 744 git-download.sh)
+---Faila vai mapes kopesana
+cp from a to b (cp c1.txt darbi/c2.txt) 
+---Parvietosana starp mapem/katalogiem
+cd nosaukums (cd DMI)
+---Teksta izvadisanai
+echo
+---Uzzinat valodu/Shell veidu
+echo $0
+---Kur sistema mekle komandas
+echo $PATH
+?---?
+git add
+git config --global user.name lietotajvards@mail.com
+git commit -m "datums"
+git clone https://github.com/username/mape.git
+git remote add origin saite uz repozitarija
+git push origin master
+git init
+---Paradit saja terminala izmantotas komandas
+history
+---Parada failu un mapes sarakstu ar pilnu informaciju
+la -l
+---Failu un mapes saraksts/Pilns failu un mapes saraksts
+ls
+ls -l
+ls -a
+?---?
+lsb_release
+---Parada informaciju par komandam
+man komanda  (man ls)
+---Izveidot mapi
+mkdir nosaukums (mkdir darbi)
+---Parvietot/parsaukt failu vai mapi
+mv atrasanas vieta+nosaukums to atrasanas vieta+nosaukums (mv git-download.sh git-download)
+---Izmanto lai uzrakstitu/izveidot skriptu/failu
+nano nosaukums (nano komandas.txt / nano git-upload)
+---Norada kur sistemei meklet komandu(kada mape)
+PATH=$PATH:atrasanas vieta (PATH=$PATH:/home/user)
+---Parada kur es atrados sobrid(kada mape)
+pwd
+---failu/mapes dzesana/mapes dzesana ar ieksa esosajiem failiem
+rm faila nosaukums (rm bb.txt)
+rmdir mapes nosaukums (rmdir apaksdarbi/) 
+rm -rf atrasanas vieta/mape (rm -rf DMI/)
+?---Parada Linux versiju
+uname
+---Parada kur glabajas informacija par komandu
+whereis komanda (whereis ls)
+---Parada kas ir pieslegts 
+who
+---Parada kas es esmu
+whoami
