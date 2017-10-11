@@ -1,0 +1,231 @@
+    1  dir
+    2  exit
+    3  dir
+    4  pwd
+    5  cd /
+    6  dir
+    7  dir tool
+    8  dir bin
+    9  ls
+   10  help ls
+   11  ls /?
+   12  ls -h
+   13  ls ?
+   14  ? ls
+   15  help dir
+   16  help ls
+   17  help dir
+   18  exit
+   19  dir
+   20  cd /
+   21  pwd
+   22  sh
+   23  whoiam
+   24  whoami
+   25  echo
+   26  who
+   27  cat b.txt
+   28  b.txt
+   29  git init
+   30  la -l
+   31  ls -l
+   32  man ls
+   33  man rmdir
+   34  whereis ls
+   35  ls -l /bin/ls
+   36  cat /bin/ls
+   37  ls -l
+   38  ls -la
+   39  pwd
+   40  git clone https://github.com/krisypon/DMI.git
+   41  firefox &
+   42  uname -r
+   43  lsb_release
+   44  cat /etc/*-release
+   45  echo $0
+   46  pwd
+   47  mkdir rtu
+   48  pwd
+   49  ls -l
+   50  cd rtu
+   51  git clone https://github.com/krisypon/DMI.git
+   52  sudo apt install git
+   53  git clone https://github.com/krisypon/DMI.git
+   54  ls -l
+   55  ls -la
+   56  cd DMI
+   57  ls -l
+   58  nano komandas.txt
+   59  who
+   60  uname -a
+   61  uname
+   62  uname -r
+   63  lsb
+   64  lsb_release 
+   65  lsb_release -a
+   66  sudo
+   67  clean
+   68  clear
+   69  cat
+   70  echo $PATH
+   71  PATH=$PATH:/home/user/rtu/DMI
+   72  echo $PATH
+   73  git-upload
+   74  cat komandas.txt
+   75  lsb_release 
+   76  whereis ls
+   77  who
+   78  whoami
+   79  echo $PATH
+   80  man echo
+   81  man cat
+   82  man cat /etc/*_release
+   83  echo
+   84  echo komandas.txt
+   85  echo $0
+   86  echo $PATH
+   87  man echo
+   88  man git
+   89  whowho
+   90  who
+   91  whoami
+   92  man who
+   93  man whoami
+   94  man uname
+   95  uname
+   96  mkdir TT
+   97  ls 
+   98  rm TT
+   99  rmdir TT
+  100  ls
+  101  rm bb.txt
+  102  ls
+  103  mk bb.txt
+  104  man nano
+  105  lsb_release 
+  106  nano git-upload
+  107  la
+  108  la -l
+  109  git-upload
+  110  cat komandas.txt
+  111  nano komandas.txt 
+  112  git-upload
+  113  nano git-upload 
+  114  hello
+  115  pwd
+  116  cd rtu
+  117  ls -la
+  118  ls -l
+  119  cd DMI
+  120  pwd
+  121  ls -l
+  122  nano komandas.txt
+  123  echo
+  124  echo komandas.txt
+  125  echo name
+  126  git push origin master
+  127  git add
+  128  git init
+  129  git push origin master
+  130  git init
+  131  man git init
+  132  cat /etc/*_release
+  133  cat /etc/*_releas
+  134  cat /etc/*-release
+  135  man cat /etc/*-release
+  136  ls
+  137  git-upload
+  138  echo $PATH
+  139  PATH=$PATH:~/rtu/DMI
+  140  echo $PATH
+  141  git-upload
+  142  ls
+  143  ls -la
+  144  la -ls
+  145  ls -l
+  146  la -l
+  147  cat komandas.txt 
+  148  pwd
+  149  man python
+  150  cd rtu
+  151  cd DMI
+  152  python
+  153  ls -l
+  154  cd rtu
+  155  cd DMI
+  156  ls
+  157  ls -l
+  158  val=`expr 2 + 2`
+  159  echo "Total value : $val"
+  160  ls -l
+  161  cat history_20170920.txt
+  162  val=`expr 2 + 2`
+  163  echo "Total value : $val"
+  164  a=10
+  165  b=20
+  166  val=`expr $a + $b`
+  167  echo "Total value : $val"
+  168  val=`expr $a - $b`
+  169  echo "Total value : $val"
+  170  val=`expr $a \* $b`
+  171  echo "Total value : $val"
+  172  val=`expr $a / $b`
+  173  echo "Total value : $val"
+  174  val=`expr $b / $a`
+  175  echo "Total value : $val"
+  176  val=`expr $b % $a`
+  177  echo "Total value : $val"
+  178  a = $b
+  179  val=`expr a = $b`
+  180  echo "Total value : $val"
+  181  a=$b
+  182  echo "Total value : $a"
+  183  [$a==$b]
+  184  val=[$a==$b]
+  185  echo "Total value : $a"
+  186  echo "Total value : $b"
+  187  nano piemeri.sh 
+  188  nano shell_operators.sh 
+  189  PATH=$PATH:~/rtu/DMI
+  190  shell_operators.sh 
+  191  nano shell_operators.sh 
+  192  shell_operators.sh 
+  193  nano shell_operators.sh 
+  194  shell_operators.sh 
+  195  nano shell_operators.sh 
+  196  shell_operators.sh 
+  197  nano shell_operators.sh 
+  198  shell_operators.sh 
+  199  nano shell_operators.sh 
+  200  shell_operators.sh 
+  201  nano shell_operators.sh 
+  202  shell_operators.sh 
+  203  nano shell_operators.sh 
+  204  shell_operators.sh 
+  205  nano shell_operators.sh 
+  206  shell_operators.sh 
+  207  nano shell_operators.sh 
+  208  shell_operators.sh 
+  209  nano shell_operators.sh 
+  210  shell_operators.sh 
+  211  nano git-upload 
+  212  nano shell_operators.sh 
+  213  history > history_20171011_01.txt
+  214  ls -l
+  215  nano shell_operators.sh 
+  216  shell_operators.sh $3 $6
+  217  shell_operators.sh $a=3 $b=4
+  218  nano shell_operators.sh 
+  219  shell_operators.sh $3 $4
+  220  nano shell_operators.sh 
+  221  shell_operators.sh 3 4
+  222  nano shell_operators.sh 
+  223  shell_operators.sh 3 4
+  224  ./shell_operators.sh 3 4
+  225  nano shell_operators.sh 
+  226  ./shell_operators.sh 3 4
+  227  nano shell_operators.sh 
+  228  ./shell_operators.sh 3 4
+  229  ./shell_operators.sh 3 
+  230  nano git-upload 
+  231  history > history_20171011_01.txt 
