@@ -6,12 +6,12 @@ read x
 echo -n "Ievadi y: "
 read y
 
-sum=`expr $x + $y`
-echo "x+y="$sum
-st=`expr $x - $y`
-echo "x-y="$st
-reiz=`expr $x \* $y`
-echo "x*y="$reiz
+#sum=`expr $x + $y`
+#echo "x+y="$sum
+#st=`expr $x - $y`
+#echo "x-y="$st
+#reiz=`expr $x \* $y`
+#echo "x*y="$reiz
 
 if [ $x -gt $y ]
 then
