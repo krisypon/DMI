@@ -1,0 +1,46 @@
+    1  VirtualBox --startvm XP
+    2  git clone https://github.com/krisypon/DMI
+    3  ls -l
+    4  pwd
+    5  cd DMI
+    6  ls -l
+    7  rmdir DMI
+    8  ls -l
+    9  nano diologs2.sh
+   10  chmod 744 diologs2.sh 
+   11  ./ diologs2.sh 
+   12  ./diologs2.sh 
+   13  nano diologs2.sh
+   14  ./diologs2.sh 
+   15  nano diologs2.sh
+   16  ./diologs2.sh 
+   17  nano diologs2.sh
+   18  ./diologs2.sh 
+   19  nano diologs2.sh
+   20  ./diologs2.sh 
+   21  nano diologs2.sh
+   22  ./diologs2.sh 
+   23  nano diologs2.sh
+   24  ./diologs2.sh 
+   25  nano diologs2.sh
+   26  ./diologs2.sh 
+   27  nano diologs2.sh
+   28  ./diologs2.sh 
+   29  nano diologs2.sh
+   30  ./diologs2.sh 
+   31  nano diologs2.sh
+   32  ./diologs2.sh 
+   33  nano diologs2.sh
+   34  ./diologs2.sh 
+   35  nano diologs2.sh
+   36  ./diologs2.sh 
+   37  nano diologs2.sh
+   38  cp diologs2.sh diologs3.sh
+   39  lls -l
+   40  ls -l
+   41  nano diologs3.sh 
+   42  ./diologs2.sh 
+   43  ./diologs3.sh 
+   44  nano diologs3.sh 
+   45  ./git-upload 20171018
+   46  history > history_20171018.txt
