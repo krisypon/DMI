@@ -1,0 +1,42 @@
+    1  VirtualBox --startvm XP
+    2  pwd
+    3  git clone https://github.com/krisypon/DMI.git
+    4  pwd
+    5  ls -la
+    6  ls -l
+    7  cd DMI
+    8  ls -l
+    9  ./md2_ar_for.sh 
+   10  nano md2_ar_for.sh 
+   11  nano if.sh
+   12  chmod 744 if.sh 
+   13  ./if.sh 
+   14  nano if.sh
+   15  ./if.sh 
+   16  nano if.sh
+   17  ./if.sh 10
+   18  nano if.sh
+   19  ./if.sh 10
+   20  ./if.sh -10
+   21  nano if.sh
+   22  ./if.sh -10
+   23  ./if.sh 0
+   24  ./if.sh 10
+   25  nano if.sh
+   26  ./if.sh 10
+   27  nano if.sh
+   28  ./if.sh 10
+   29  ./if.sh 0
+   30  nano if.sh
+   31  nano array_loop.sh
+   32  chmod 744 array_loop.sh 
+   33  ./array_loop.sh 
+   34  ./array_loop.sh 4 5 5
+   35  nano array_loop.sh
+   36  ./array_loop.sh 4 5 5
+   37  ./array_loop.sh 45 565 1544 65 
+   38  nano array_loop.sh
+   39  ./array_loop.sh 
+   40  ./array_loop.sh 4 5 6 85 45 2 3 
+   41  nano array_loop.sh
+   42  history > history_20171025_02.txt

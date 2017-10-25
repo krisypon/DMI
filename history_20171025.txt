@@ -1,0 +1,95 @@
+    1  VirtualBox --startvm XP
+    2  ls -la
+    3  nano md2_ar_for.sh 
+    4  ./md2_ar_for.sh 
+    5  nano md2_ar_for.sh 
+    6  ./md2_ar_for.sh 
+    7  nano md2_ar_for.sh 
+    8  ./md2_ar_for.sh 
+    9  nano md2_ar_for.sh 
+   10  ./md2_ar_for.sh 
+   11  nano md2_ar_for.sh 
+   12  ./md2_ar_for.sh 
+   13  nano md2_ar_for.sh 
+   14  ./md2_ar_for.sh 
+   15  nano md2_ar_for.sh 
+   16  ./md2_ar_for.sh 
+   17  nano md2_ar_for.sh 
+   18  ./md2_ar_for.sh 
+   19  nano md2_ar_for.sh 
+   20  ./md2_ar_for.sh 
+   21  nano md2_ar_for.sh 
+   22  ./md2_ar_for.sh 
+   23  nano md2_ar_for.sh 
+   24  ./md2_ar_for.sh 
+   25  nano md2_ar_for.sh 
+   26  ./md2_ar_for.sh 
+   27  nano md2_ar_for.sh 
+   28  ./md2_ar_for.sh 
+   29  nano md2_ar_for.sh 
+   30  ./md2_ar_for.sh 
+   31  nano md2_ar_for.sh 
+   32  $ echo "1 2 3 3 4" | num max
+   33  echo "1 2 3 3 4" | num max
+   34  nano md2_ar_for.sh 
+   35  echo 1 2 3 3 4 | num max
+   36  echo 1 2 3 3 4 | num min
+   37  nano md2_ar_for.sh 
+   38  ./md2_ar_for.sh 
+   39  nano md2_ar_for.sh 
+   40  ./md2_ar_for.sh 
+   41  nano md2_ar_for.sh 
+   42  ./md2_ar_for.sh 
+   43  nano md2_ar_for.sh 
+   44  ./md2_ar_for.sh 
+   45  nano md2_ar_for.sh 
+   46  ./md2_ar_for.sh 
+   47  nano md2_ar_for.sh 
+   48  ./md2_ar_for.sh 
+   49  nano md2_ar_for.sh 
+   50  ./md2_ar_for.sh 
+   51  nano md2_ar_for.sh 
+   52  ./md2_ar_for.sh 
+   53  nano md2_ar_for.sh 
+   54  ./md2_ar_for.sh 
+   55  nano md2_ar_for.sh 
+   56  ./md2_ar_for.sh 
+   57  nano md2_ar_for.sh 
+   58  cp md2_ar_for.sh copyfor.sh
+   59  ls -la
+   60  nano md2_ar_for.sh
+   61  nano md2_ar_for.sh.save 
+   62  rm md2_ar_for.sh.save 
+   63  ls -la
+   64  nano copyfor.sh 
+   65  ./md2_ar_for.sh 
+   66  ./copyfor.sh 
+   67  nano copyfor.sh 
+   68  ./copyfor.sh 
+   69  nano copyfor.sh 
+   70  ./copyfor.sh 
+   71  nano copyfor.sh 
+   72  ./copyfor.sh 
+   73  nano copyfor.sh 
+   74  ./copyfor.sh 
+   75  nano copyfor.sh 
+   76  ./copyfor.sh 
+   77  nano copyfor.sh 
+   78  ./copyfor.sh 
+   79  nano copyfor.sh 
+   80  ./copyfor.sh 
+   81  nano copyfor.sh 
+   82  ./copyfor.sh 
+   83  nano copyfor.sh 
+   84  ./copyfor.sh 
+   85  nano copyfor.sh 
+   86  ./copyfor.sh 
+   87  nano copyfor.sh 
+   88  ./copyfor.sh 
+   89  nano copyfor.sh 
+   90  ./copyfor.sh 
+   91  nano copyfor.sh 
+   92  ./copyfor.sh 
+   93  nano copyfor.sh 
+   94  ./copyfor.sh 
+   95  history > history_20171025.txt

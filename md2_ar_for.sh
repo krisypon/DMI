@@ -3,13 +3,15 @@
 min=0
 max=0
 vid=0
+echo "Ievadi skaitlu skaitu: "
+read n 
 
-for i in 1 2 3 
+for (( i = 1; i <= n; i++))
 do
 echo -n "Ievadi $i. skaitli: "
 read x
-vid=`expr $vid + $x`
-
+sum=`expr $sum + $x`
+#max un min
 if (( i == 1 ))
 then
 max=$x
@@ -22,8 +24,19 @@ then
 max=$x
 fi
 done
+#moda
+#if (( i == 1))
+#then 
+#m=$x
+#else
 
+if (( n == 3 ))
+then
+echo $min `expr $sum - $min - $max` $max
+fi
 
+echo "Statistika:"
 echo "Min: "$min
-echo "Vid: "`expr $vid - $min - $max`
 echo "Max: "$max
+#echo "Vid.arifmetiskais: " $(bc <<< `expr $sum / $n `)
+echo $sum / $n |bc
