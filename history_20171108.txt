@@ -1,0 +1,105 @@
+    1  VirtualBox --startvm XP
+    2  git clone https://github.com/krisypon/DMI.git
+    3  pwd
+    4  ls -la
+    5  ls -l
+    6  cd DMI
+    7  ls
+    8  mkdir PYTHON
+    9  ls -l
+   10  cd PYTHON
+   11  pwd
+   12  nano hello.py
+   13  whereis python
+   14  nano hello.py
+   15  ./hello.py
+   16  chmod 744 hello.py 
+   17  ./hello.py
+   18  nano hello.py
+   19  ./hello.py
+   20  nano hello.py
+   21  ./hello.py
+   22  nano hello.py
+   23  ./hello.py
+   24  nano hello.py
+   25  ./hello.py
+   26  nano hello.py
+   27  ./hello.py
+   28  nano hello.py
+   29  ./hello.py
+   30  nano hello.py
+   31  ./hello.py
+   32  nano hello.py
+   33  ./hello.py
+   34  nano hello.py
+   35  ./hello.py
+   36  nano hello.py
+   37  ./hello.py
+   38  nano hello.py
+   39  ./hello.py
+   40  nano hello.py
+   41  ./hello.py
+   42  nano hello.py
+   43  ./hello.py
+   44  nano hello.py
+   45  ./hello.py
+   46  nano hello.py
+   47  ./hello.py
+   48  nano hello.py
+   49  ./hello.py
+   50  nano hello.py
+   51  ./hello.py
+   52  nano hello.py
+   53  ./hello.py
+   54  nano hello.py
+   55  nano tabula.py
+   56  chmod 744 tabula.py
+   57  ./tabula.py
+   58  nano tabula.py
+   59  ./tabula.py
+   60  nano tabula.py
+   61  ./tabula.py
+   62  nano tabula.py
+   63  ./tabula.py
+   64  nano tabula.py
+   65  ./tabula.py
+   66  nano tabula.py
+   67  ./tabula.py
+   68  nano tabula.py
+   69  ./tabula.py
+   70  nano tabula.py
+   71  fg
+   72  ./tabula.py
+   73  nano tabula.py
+   74  ./tabula.py
+   75  nano tabula.py
+   76  ./tabula.py
+   77  nano tabula.py
+   78  ./tabula.py
+   79  nano tabula.py
+   80  ./tabula.py
+   81  nano tabula.py
+   82  ./tabula.py
+   83  nano tabula.py
+   84  ./tabula.py
+   85  nano tabula.py
+   86  ./tabula.py
+   87  nano tabula.py
+   88  ./tabula.py
+   89  nano tabula.py
+   90  ./tabula.py
+   91  nano tabula.py
+   92  ./tabula.py
+   93  nano tabula.py
+   94  ./tabula.py
+   95  nano tabula.py
+   96  ./tabula.py
+   97  nano tabula.py
+   98  ./tabula.py
+   99  nano tabula.py
+  100  ./tabula.py
+  101  nano tabula.py
+  102  ./tabula.py
+  103  cd ..
+  104  pwd
+  105  history > history_20171108.txt
