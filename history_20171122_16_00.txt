@@ -1,0 +1,22 @@
+    1  VirtualBox --startvm XP
+    2  cd ..
+    3  ls -l
+    4  cat history_20171115.txt 
+    5  cd PYTHON/
+    6  cp sin_caur_summu_ver3.py sin_caur_summu_ver4.py
+    7  ls -l
+    8  cp sin_caur_summu_ver4.py sin_caur_summu_ver4_kl.py 
+    9  cp sin_caur_summu_ver3.py sin_caur_summu_ver4_kl.py 
+   10  cp sin_caur_summu_ver4_kl.py sin_caur_summu_ver5.py
+   11  ls -l
+   12  cp sin_caur_summu_ver4.py sin_caur_summu.py
+   13  ls -l
+   14  rm sin_caur_summu_ver4.py 
+   15  ls -l
+   16  mv sin_caur_summu_ver4_kl.py sin_caur_summu_ver4.py
+   17  ls -l
+   18  cp sin_caur_summu_ver5.py sin_caur_summu_ver6.py
+   19  idle
+   20  python sin_caur_summu_copy.py 
+   21  nano sin_caur_summu_copy.py 
+   22  history > history_20171122_16_00.txt
