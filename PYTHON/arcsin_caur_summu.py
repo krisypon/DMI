@@ -10,7 +10,7 @@ S=0
 
 for k in xrange(0, 500, 1):
     l=2*k
-    z=l+1
+    z=2*k+1
     a = (math.factorial(l)*x**(z))/(math.factorial(k)**2*(z)*2**(l))
     S+=a
     if k == 499:
