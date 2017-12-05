@@ -2,36 +2,26 @@ import math
 
 x = 1. * input("Ievadi argumentu x: ")
 
-y=math.asin(x)
-print "arcsin(%.2f)=%.2f"%(x,y)
+y = math.asin(x)
+print "arcsin(%.2f) = %.2f"%(x,y)
+print "  "
 
-#Ar FOR ciklu
-S=0
+def my_asin(x):
+    k = 0
+    a = x
+    S = a
 
-for k in xrange(0, 500, 1):
-    l=2*k
-    z=2*k+1
-    a = (math.factorial(l)*x**(z))/(math.factorial(k)**2*(z)*2**(l))
-    S+=a
-    if k == 499:
-        print "a%d = %.2f S%d = %.2f"%(k,a,k,S)
+    while k < 500:
+        k += 1
+        a = a*((2*k-1)**2*2*k*x*x)/(k**2*4*(2*k+1))
+        S += a
+        if k == 499:
+            print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
+        elif k== 500:
+            print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
+    return S
 
-#Ar WHILE ciklu
-'''
-k=0
-l=2*k
-z=l+1
-a = (math.factorial(l)*x**(z))/(math.factorial(k)**2*(z)*2**(l))
-S=a
-print "a%d = %6.2f S%d = %6.2f"%(k,a,k,S)
+print my_asin(x)
 
 
-while k < 500:
-    k+=1
-    l=2*k
-    z=l+1
-    a = (math.factorial(l)*x**(z))/(math.factorial(k)**2*(z)*2**(l))
-    S+=a
-    if k <20:
-        print "a%d = %.2f S%d = %.2f"%(k,a,k,S)
-'''
+
