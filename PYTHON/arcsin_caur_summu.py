@@ -10,7 +10,7 @@ def my_asin(x):
     k = 0
     a = x
     S = a
-
+    print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
     while k < 500:
         k += 1
         a = a*((2*k-1)**2*2*k*x*x)/(k**2*4*(2*k+1))
@@ -22,6 +22,13 @@ def my_asin(x):
     return S
 
 print my_asin(x)
-
-
+print " "
+print "            500"
+print "           _____"
+print "           \                    2*k+1"
+print "            \         (2*k)! * x"
+print "asin(%.2f) = >   ______________________"%(x)
+print "            /        2             2*k"
+print "           /____ (k)! * (2*k+1) * 2"
+print "            k=0"
 
