@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def my_asin(x):
     k = 0
-    a = x
+    a = x * 1
     S = a
     
     while k < 500:
@@ -14,17 +14,15 @@ def my_asin(x):
         
     return S
 
-a=-0.99999
-b=0.99998
-x = np.arange(a,b,0.05)
+a=-1
+b=1
+x = np.arange(a,b,0.005)
 y = my_asin(x)
 plt.plot(x,y)
-plt.grid()
-plt.show()
-plt.plot(x,y)
-plt.grid()
-plt.show()
-'''
+plt.axis([-4, 4, -4, 4])
+plt.grid(color='green')
+#plt.show()
+
 n = len(x)
 y_prim = []
 for i in range(n-1):
@@ -42,5 +40,5 @@ for i in range(n-2):
     y_primprim.append(delta_y_prim/delta_x)
 
 plt.plot(x[:n-2],y_primprim)
+
 plt.show()
-'''

@@ -3,19 +3,20 @@ import matplotlib.pyplot as plt
 
 x = np.arange(-1, 1, 0.01)
 
-#y = np.arcsin(x)
-#plt.plot(x, y)
+y = np.arcsin(x)
+plt.plot(x, y)
 
-def my_asin(x,n):
+def my_asin(x):
     k = 0
-    a = x
+    a = x * 1
     S = a
-    while k < n:
+    while k < 500:
         k += 1
-        a = a*((2*k-1)*(2*k-1)*x*x)/(k*2*(2*k+1))
+        R = (2*k-1)*(2*k-1)*x*x/((2*k)*(2*k+1))
+        a = a * R
         S += a
     return S
 
-yy = my_asin(x,500)
-plt.plot(x, yy, 'r')
+yy = my_asin(x)
+plt.plot(x, yy+0.5, 'g')
 plt.show()

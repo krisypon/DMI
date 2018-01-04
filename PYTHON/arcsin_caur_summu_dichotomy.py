@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def my_asin(x):
     k = 0
-    a = x
+    a = x * 1
     S = a
     #print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
     while k < 500:
@@ -15,8 +15,8 @@ def my_asin(x):
         
     return S
 
-a=-0.99999
-b=0.99998
+a=-1
+b=1.0001
 x = np.arange(a,b,0.001)
 y = my_asin(x)
 plt.plot(x,y)
