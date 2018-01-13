@@ -18,5 +18,5 @@ def my_asin(x):
     return S
 
 yy = my_asin(x)
-plt.plot(x, yy+0.5, 'g')
+plt.plot(x, yy, 'g')
 plt.show()
