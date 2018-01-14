@@ -1,5 +1,6 @@
 import math
 
+print "Arcsin aprekinasana; |x|<=1 "
 x = 1. * input("Ievadi argumentu x: ")
 
 y = math.asin(x)
@@ -32,3 +33,9 @@ print "            /        2             2*k"
 print "           /____ (k)! * (2*k+1) * 2"
 print "            k=0"
 
+print ""
+print "          2"
+print "   (2*k-1)  * x * x"
+print " _____________________"
+print ""
+print "    k * 2 * (2*k+1)"

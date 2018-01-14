@@ -52,3 +52,12 @@ then
 else
 	echo "Moda:" $b1
 fi
+
+#Videjais aretmetiskais
+sum=0
+for((i=0;i<n;i++))
+do
+	sum=`expr $sum + ${num[$i]}`
+done
+echo -n "Videjais aritmetiskais: "
+echo "scale=2;$sum/$n" |bc
