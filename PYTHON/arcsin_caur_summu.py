@@ -18,9 +18,9 @@ def my_asin(x):
         S += a
         if k == 499:
             print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
-        elif k== 500:
+        elif k == 500:
             print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
-    return S
+        return S
     
 print my_asin(x)
 print " "
@@ -34,8 +34,8 @@ print "           /____ (k)! * (2*k+1) * 2"
 print "            k=0"
 
 print ""
-print "          2"
-print "   (2*k-1)  * x * x"
-print " _____________________"
+print "                                  2"
+print "                           (2*k-1)  * x * x"
+print "rekurences reizinatajs:  _____________________"
 print ""
-print "    k * 2 * (2*k+1)"
+print "                            k * 2 * (2*k+1)"
