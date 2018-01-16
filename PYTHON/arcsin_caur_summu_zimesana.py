@@ -19,4 +19,5 @@ def my_asin(x):
 
 yy = my_asin(x)
 plt.plot(x, yy, 'g')
+plt.grid(color='green')
 plt.show()

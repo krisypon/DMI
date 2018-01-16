@@ -17,6 +17,7 @@ def mans_sinuss(x,n):
         S += a   
     return S
 yy = mans_sinuss(x,10)
-plt.plot(x, yy+0.5, 'r')
+plt.plot(x, yy, 'r')
+plt.grid(color='green')
 
 plt.show()

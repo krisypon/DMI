@@ -20,7 +20,7 @@ def my_asin(x):
             print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
         elif k == 500:
             print "a%d = %.2f S%d = %6.2f"%(k,a,k,S)
-        return S
+    return "arcsin(%.2f) caur summu: %.2f"%(x,S)
     
 print my_asin(x)
 print " "

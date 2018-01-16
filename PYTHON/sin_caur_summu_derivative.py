@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as mp
 
 def mans_sinuss(x):
     k=0
@@ -41,4 +42,11 @@ for i in range(n-2):
     y_primprim.append(delta_y_prim/delta_x)
 
 plt.plot(x[:n-2],y_primprim)
+
+#legenda
+blue = mp.Patch(color='blue', label="(sin)''")
+red = mp.Patch(color='red', label="(sin)'")
+green = mp.Patch(color='green', label="sin")
+plt.legend(handles=[green, red, blue])
+
 plt.show()
