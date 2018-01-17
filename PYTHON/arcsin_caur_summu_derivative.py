@@ -43,9 +43,9 @@ for i in range(n-2):
 plt.plot(x[:n-2],y_primprim)
 
 #legenda
-blue = mp.Patch(color='blue', label='asin')
-red = mp.Patch(color='red', label="(asin)''")
-green = mp.Patch(color='green', label="(asin)'")
+blue = mp.Patch(color='blue', label='asin(x)')
+red = mp.Patch(color='red', label="(asin(x))''")
+green = mp.Patch(color='green', label="(asin(x))'")
 plt.legend(handles=[blue, green, red])
 
 
