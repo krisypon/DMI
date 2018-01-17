@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Input diferent numbers:"
 echo "Input x: "
 read x
 echo "Input y: "
