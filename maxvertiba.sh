@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#echo "Input x: "
-#read x
-#echo "Input y: "
-#read y
-#echo "Input z: "
-#read z
+echo "Input x: "
+read x
+echo "Input y: "
+read y
+echo "Input z: "
+read z
 
 #if (( $x > $y && $x > $z ))
 #then
