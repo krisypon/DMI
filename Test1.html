@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.uzdevums</title>
+<meta name="description" content="Show the ChangedEvents that occur as the user modifies diagrams that share a single model, and the state of the UndoManager." />
+<!-- Copyright 1998-2018 by Northwoods Software Corporation. -->
+<meta charset="UTF-8">
+<script src="../release/go.js"></script>
+<script src="../assets/js/goSamples.js"></script>  <!-- this is only for the GoJS Samples framework -->
+    <script src="go-debug.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.18/go-debug.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.18/go.js"></script>
+<script src="../release/go.js"></script>
+<script src="../assets/js/goSamples.js"></script>
+<script id="code">
+function init() {
+  if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+  var $ = go.GraphObject.make;  // for conciseness in defining templates
+  
+  greenDiagram =
+    $(go.Diagram, "greenDiagram",
+      {
+        // start everything in the middle of the viewport
+        initialContentAlignment: go.Spot.Center,
+        // double-click in background creates a new node there
+        "clickCreatingTool.archetypeNodeData": { key: "node" }
+      });
+  greenDiagram.nodeTemplate =
+    $(go.Node, "Vertical",
+      new go.Binding("location", "loc").makeTwoWay(),
+      $(go.Shape, "Ellipse",
+        { fill: "lightgreen", width: 30, height: 30, portId: "" }),
+      $(go.TextBlock,
+        { margin: 3, font: "bold 12px Georgia, sans-serif" },
+        new go.Binding("text", "text"))
+    );
+  greenDiagram.linkTemplate =
+    $(go.Link,
+      $(go.Shape,  // the link shape
+        { strokeWidth: 1, stroke: "black" }),
+     // $(go.Shape,  // the arrowhead
+    //    { toArrow: "standard",
+    //      fill: "#76C176", stroke: null })
+    );
+  // create the model data that will be represented in both diagrams simultaneously
+  var model = new go.GraphLinksModel(
+  [
+    { key: 1, text: "K.Berlizeva", loc: new go.Point(130,150) },
+    { key: 2, text: " ", loc: new go.Point(50,150) },
+    { key: 3, text: " ", loc: new go.Point(80,80) },
+    { key: 4, text: " ", loc: new go.Point(150,50) },  
+    { key: 5, text: " ", loc: new go.Point(220,80) },
+    { key: 6, text: " ", loc: new go.Point(250,150) },
+    { key: 7, text: " ", loc: new go.Point(220,220) },
+    { key: 8, text: " ", loc: new go.Point(150,250) },
+    { key: 9, text: " ", loc: new go.Point(80,220) }    
+      
+  ],
+  [
+    { from: 1, to: 2 },
+    { from: 1, to: 3 },  
+    { from: 1, to: 4 },
+    { from: 1, to: 5 },  
+    { from: 1, to: 6 },
+    { from: 1, to: 7 },  
+    { from: 1, to: 8 },
+    { from: 1, to: 9 },  
+    { from: 2, to: 3 },  
+    { from: 2, to: 4 },
+    { from: 2, to: 5 },
+    { from: 2, to: 7 },  
+    { from: 2, to: 8 },
+    { from: 2, to: 9 },  
+    { from: 3, to: 4 },
+    { from: 3, to: 5 },  
+    { from: 3, to: 6 },  
+    { from: 3, to: 8 },
+    { from: 3, to: 9 },  
+    { from: 4, to: 5 },  
+    { from: 4, to: 6 },
+    { from: 4, to: 7 },
+    { from: 4, to: 9 },  
+    { from: 5, to: 6 },
+    { from: 5, to: 7 },  
+    { from: 5, to: 8 },
+    { from: 6, to: 7 },  
+    { from: 6, to: 8 },
+    { from: 6, to: 9 },  
+    { from: 7, to: 8 },
+    { from: 7, to: 9 },
+    { from: 8, to: 9 }  
+  ]);
+  // the two Diagrams share the same model
+  greenDiagram.model = model;
+  // now turn on undo/redo
+  model.undoManager.isEnabled = true;
+  // **********************************************************
+  // A third diagram is on this page to display the undo state.
+  // It functions as a tree view, showing the Transactions
+  // in the UndoManager history.
+  // **********************************************************
+  var undoDisplay =
+    $(go.Diagram, "undoDisplay",
+      {
+        allowMove: false,
+        maxSelectionCount: 1,
+        layout:
+          $(go.TreeLayout,
+            {
+              alignment: go.TreeLayout.AlignmentStart,
+              angle: 0,
+              compaction: go.TreeLayout.CompactionNone,
+              layerSpacing: 16,
+              layerSpacingParentOverlap: 1,
+              nodeIndent: 2,
+              nodeIndentPastParent: 0.88,
+              nodeSpacing: 0,
+              setsPortSpot: false,
+              setsChildPortSpot: false,
+              arrangementSpacing: new go.Size(2, 2)
+            }),
+        "animationManager.isEnabled": false
+      });
+  undoDisplay.nodeTemplate =
+    $(go.Node,
+      $("TreeExpanderButton",
+        { width: 14, "ButtonBorder.fill": "whitesmoke" }),
+      $(go.Panel, "Horizontal",
+        { position: new go.Point(16, 0) },
+        new go.Binding("background", "color"),
+        $(go.TextBlock, {margin: 2},
+          new go.Binding("text", "text"))
+      )
+    );
+  undoDisplay.linkTemplate = $(go.Link);  // not really used
+  var undoModel =
+    $(go.TreeModel,  // initially empty
+      { isReadOnly: true });
+  undoDisplay.model = undoModel;
+  // ******************************************************
+  // Add an undo listener to the main model
+  // ******************************************************
+  var changedLog = document.getElementById("modelChangedLog");
+  var editToRedo = null; // a node in the undoDisplay
+  var editList = [];
+  model.addChangedListener(function(e) {
+    // do not display some uninteresting kinds of transaction notifications
+    if (e.change === go.ChangedEvent.Transaction) {
+      if (e.propertyName === "CommittingTransaction" || e.modelChange === "SourceChanged") return;
+      // do not display any layout transactions
+      if (e.oldValue === "Layout") return;
+    }  // You will probably want to use e.isTransactionFinished instead
+    // Add entries into the log
+    var changes = e.toString();
+    if (changes[0] !== "*") changes = "&nbsp;&nbsp;" + changes;
+    changedLog.innerHTML += changes + "<br/>";
+    changedLog.scrollTop = changedLog.scrollHeight;
+    // Modify the undoDisplay Diagram, the tree view
+    if (e.propertyName === "CommittedTransaction") {
+      if (editToRedo != null) {
+        // remove from the undo display diagram all nodes after editToRedo
+        for (var i = editToRedo.data.index+1; i < editList.length; i++) {
+          undoDisplay.remove(editList[i]);
+        }
+        editList = editList.slice(0, editToRedo.data.index);
+        editToRedo = null;
+      }
+      var tx = e.object;
+      var txname = (tx !== null ? e.object.name : "");
+      var parentData = {text: txname, tag: e.object, index: editList.length - 1};
+      undoModel.addNodeData(parentData)
+      var parentKey = undoModel.getKeyForNodeData(parentData);
+      var parentNode = undoDisplay.findNodeForKey(parentKey);
+      editList.push(parentNode);
+      if (tx !== null) {
+        var allChanges = tx.changes;
+        var odd = true;
+        allChanges.each(function(change) {
+            var childData = {
+              color: (odd ? "white" : "#E0FFED"),
+              text: change.toString(),
+              parent: parentKey
+            };
+            undoModel.addNodeData(childData)
+            odd = !odd;
+          });
+        undoDisplay.commandHandler.collapseTree(parentNode);
+      }
+    } else if (e.propertyName === "FinishedUndo" || e.propertyName === "FinishedRedo") {
+      var undoManager = model.undoManager;
+      if (editToRedo !== null) {
+        editToRedo.isSelected = false;
+        editToRedo = null;
+      }
+      // Find the node that represents the undo or redo state and select it
+      var nextEdit = undoManager.transactionToRedo;
+      if (nextEdit !== null) {
+        var itr = undoDisplay.nodes;
+        while (itr.next()) {
+          var node = itr.value;
+          if (node.data.tag === nextEdit) {
+            node.isSelected = true;
+            editToRedo = node;
+            break;
+          }
+        }
+      }
+    }
+  }); // end model changed listener
+  model.addChangedListener(function(e) {
+    if (e.isTransactionFinished) {
+      var tx = e.object;
+      if (tx instanceof go.Transaction && window.console) {
+        window.console.log(tx.toString());
+        tx.changes.each(function(c) {
+          if (c.model) window.console.log("  " + c.toString());
+        });
+      }
+    }
+  });
+} // end init
+function clearLog() {
+  var div = document.getElementById("modelChangedLog").innerHTML = "";
+}
+</script>
+</head>
+<body onload="init()">
+    <center>
+<div id="sample">
+  
+  <!-- The DIV for the Diagram needs an explicit size or else we won't see anything.
+       Also add a border to help see the edges. -->
+  <div style="width:100%; white-space:nowrap">
+    <div style="display: inline-block; vertical-align: top; width:50%">
+      
+      <div style="width:100%; height:20px"></div>
+      <div id="greenDiagram" style="border: solid 1px green; width:100%; height:300px"></div>
+    </div>
+    
+  </div>
+</div>
+    </center>
+    <center><h2>Communicative: many to many</h2></center>
+</body>
+</html>
